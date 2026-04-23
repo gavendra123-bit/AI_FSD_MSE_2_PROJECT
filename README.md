@@ -119,7 +119,8 @@ npm run dev
 ### Frontend
 
 1. Create a Render Static Site for `frontend`.
-2. Add `VITE_API_URL` with your deployed backend API URL + `/api`.
+2. Add `VITE_API_URL` with your deployed backend URL.
+   Example: `https://your-backend-name.onrender.com`
 3. Use:
    - Build command: `npm install && npm run build`
    - Publish directory: `dist`
@@ -133,11 +134,17 @@ Deploy the `frontend` folder on Vercel:
 1. Import GitHub repository into Vercel.
 2. Set root directory to `frontend`.
 3. Add environment variable:
-   - `VITE_API_URL`
+   - `VITE_API_URL=https://your-backend-name.onrender.com`
 4. Build command: `npm run build`
 5. Output directory: `dist`
 
 The included [vercel.json](/Users/gavendrapachahra/Desktop/AI_FSD_MSE2/frontend/vercel.json) supports SPA routing.
+
+### Important Deployment Variables
+
+- Frontend `VITE_API_URL`: `https://your-backend-name.onrender.com`
+- Backend `CLIENT_URL`: your deployed frontend URL
+  Example: `https://your-frontend-name.onrender.com` or your Vercel URL
 
 ## Suggested Report Contents
 
